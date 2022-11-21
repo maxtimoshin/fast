@@ -1,0 +1,48 @@
+@import "./header.css";
+@import "./main.css";
+@import "./footer.css";
+@import "./adaptive.css";
+@import "./burger-nav.css";
+@import "./fonts.css";
+@import "./normalize.css";
+
+body.lock {
+    overflow: hidden;
+}
+
+:root {
+    --main-bg-color: #FFFFFF;
+    --main-content-color: #ED4A17;
+    --second-content-color: #F2F2F2;
+    --main-font-color: #323036;
+    --second-font-color: #FFFFFF;
+    --ff-u: "eUkraine";
+    --ff-i: "Inter";
+    --ff-t: "TTFirsNeue";
+    --fw-r: 300;
+    --fw-m: 500;
+    --fw-b: 700;
+    --fs-16: 1rem;
+    --fs-18: 1.125rem;
+    --fs-20: 1.25rem;
+    --fs-22: 1.375rem;
+    --fs-24: 1.5rem;
+    --fs-30: 1.875rem;
+    --fs-40: 2.5rem;
+    --fs-60: 3.75rem;
+    --fs-80: 5rem;
+    --fs-100: 6.25rem;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+}

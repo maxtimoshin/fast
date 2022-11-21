@@ -1,0 +1,50 @@
+.main {
+    margin:180px 0 0 0;
+}
+
+.stretched-words {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-font-color);
+    font-family: var(--ff-u);
+    font-size: var(--fs-100);
+    font-weight: var(--fw-b);
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.stretched-words span{ 
+    display: block;
+    position: relative;
+    
+}
+
+.stretched-words span::before {
+    width:max-content;
+    position: absolute;
+    content:"Якщо вам";
+    color: var(--main-content-color);
+    font-family: var(--ff-u);
+    font-size: var(--fs-100);
+    font-weight: var(--fw-b);
+    text-transform: uppercase;
+    left:-110%;
+    top:0;
+    opacity: 0.1;
+}
+
+.stretched-words span::after {
+    width:max-content;
+    position: absolute;
+    content:"Якщо вам";
+    color: var(--main-content-color);
+    font-family: var(--ff-u);
+    font-size: var(--fs-100);
+    font-weight: var(--fw-b);
+    text-transform: uppercase;
+    left:110%;
+    top:0;
+    opacity: 0.1;
+}
