@@ -1,5 +1,5 @@
 .main {
-    margin:180px 0 0 0;
+    margin: 180px 0 0 0;
 }
 
 .stretched-words {
@@ -15,36 +15,293 @@
     overflow: hidden;
 }
 
-.stretched-words span{ 
+.stretched-words span {
     display: block;
     position: relative;
-    
+
 }
 
 .stretched-words span::before {
-    width:max-content;
+    width: max-content;
     position: absolute;
-    content:"Якщо вам";
+    content: "Якщо вам";
     color: var(--main-content-color);
     font-family: var(--ff-u);
     font-size: var(--fs-100);
     font-weight: var(--fw-b);
     text-transform: uppercase;
-    left:-110%;
-    top:0;
+    left: -110%;
+    top: 0;
     opacity: 0.1;
 }
 
 .stretched-words span::after {
-    width:max-content;
+    width: max-content;
     position: absolute;
-    content:"Якщо вам";
+    content: "Якщо вам";
     color: var(--main-content-color);
     font-family: var(--ff-u);
     font-size: var(--fs-100);
     font-weight: var(--fw-b);
     text-transform: uppercase;
-    left:110%;
-    top:0;
+    left: 110%;
+    top: 0;
     opacity: 0.1;
+}
+
+.benefits-grid {
+    margin: 90px 0 170px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px 16px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "s1 s2 s2"
+        "s3 s3 s4";
+}
+
+.s1,
+.s2,
+.s3,
+.s4 {
+    height: 300px;
+    border-radius: 16px;
+}
+
+.s1 span,
+.s2 span,
+.s3 span,
+.s4 span {
+    color: var(--second-font-color);
+    font-family: var(--ff-u);
+    font-size: var(--fs-24);
+    font-weight: var(--fw-b);
+    display: block;
+    width: fit-content;
+}
+
+.s1 {
+    grid-area: s1;
+    background: url(../assets/images/s1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.s1 span {
+    margin: 24px 0 0 32px;
+}
+
+
+.s2 {
+    grid-area: s2;
+    background: var(--second-content-color);
+    background: url(../assets/images/s2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.s2 span {
+    margin: 24px 32px 0 auto;
+    color: var(--main-font-color);
+}
+
+.s3 {
+    grid-area: s3;
+    background: var(--second-content-color);
+    background: url(../assets/images/s3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
+
+.s3 span {
+    color: var(--main-font-color);
+    margin: 0 0 24px 32px;
+}
+
+.s4 {
+    grid-area: s4;
+    background: var(--main-content-color);
+    background: url(../assets/images/s4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.s4 span {
+    margin: 0 32px 24px 0;
+}
+
+.container-wrapper {
+    height: 800px;
+    width: 100%;
+    background: url(../assets/images/rotated-words-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 270px 0;
+}
+
+.about-block {
+    padding: 32px;
+    background: var(--main-content-color);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+    max-width: 353px;
+    border-radius: 20px;
+    margin: 100px 0 0 214px;
+}
+
+.about-title,
+.about-description {
+    color: var(--second-font-color);
+}
+
+.about-title {
+    font-family: var(--ff-u);
+    font-size: var(--fs-60);
+    font-weight: var(--fw-r);
+}
+
+.dividing-line {
+    width: 100%;
+    background: var(--second-content-color);
+    height: 2px;
+}
+
+.about-description {
+    font-family: var(--ff-u);
+    font-size: var(--fs-18);
+    font-weight: var(--fw-r);
+    line-height: 50px;
+}
+
+.portfolio-content {
+    margin-left: 214px;
+    display: flex;
+}
+
+.portfolio-plate {
+    width: 517px;
+    border-radius: 16px;
+    background-color: var(--second-content-color);
+}
+
+.portfolio-left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+}
+
+.portfolio-right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.plate-tag {
+    height: fit-content;
+    font-family: var(--ff-u);
+    font-size: var(--fs-18);
+    font-weight: var(--fw-r);
+    color: var(--second-font-color);
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: var(--main-content-color);
+}
+
+.mojem-plate {
+    background-image: url(../assets/images/mojem.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    height: 540px;
+}
+
+.mojem-plate .plate-tag {
+    margin: 20px 20px 0 0;
+}
+
+.sens-visual-plate {
+    background-image: url(../assets/images/sens-visual.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    height: 540px;
+    position: relative;
+}
+
+.sens-visual-plate::before {
+    position: absolute;
+    content: "";
+    background: url(../assets/images/sens-visual-after.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 368px;
+    height: 361px;
+    left: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sens-visual-plate .plate-tag {
+    margin: 20px 0 0 20px;
+}
+
+.bohlib-plate {
+    background-image: url(../assets/images/bohlib.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    height: 640px;
+    position: relative;
+}
+
+.bohlib-plate .plate-tag {
+    margin: 20px 0 0 20px;
+}
+
+.bigmoney-plate {
+    display: flex;
+    justify-content: flex-start;
+    height: 640px;
+    position: relative;
+}
+
+.bigmoney-plate::before {
+    position: absolute;
+    content: "";
+    background: url(../assets/images/bigmoney.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 937px;
+    height: 432px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bigmoney-plate .plate-tag {
+    margin: 20px 0 0 20px;
 }
