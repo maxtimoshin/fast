@@ -193,6 +193,7 @@
 .portfolio-content {
     margin-left: 214px;
     display: flex;
+    gap: 30px;
 }
 
 .portfolio-plate {
@@ -210,9 +211,13 @@
 .portfolio-right-column {
     display: flex;
     flex-direction: column;
+    max-width: 517px;
+    width: 100%;
+    gap: 88px;
 }
 
 .plate-tag {
+    z-index: 1;
     height: fit-content;
     font-family: var(--ff-u);
     font-size: var(--fs-18);
@@ -288,6 +293,19 @@
     position: relative;
 }
 
+.bigmoney-plate::after {
+    position: absolute;
+    content: "";
+    background: url(../assets/images/portfolio-arrows.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 200px;
+    right: -200px;
+    bottom: -180px;
+}
+
 .bigmoney-plate::before {
     position: absolute;
     content: "";
@@ -304,4 +322,136 @@
 
 .bigmoney-plate .plate-tag {
     margin: 20px 0 0 20px;
+}
+
+.portfolio-title {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: flex-end;
+}
+
+.upper-portfolio-title,
+.lower-portfolio-title {
+    font-family: var(--ff-u);
+    font-size: var(--fs-60);
+    font-weight: var(--fw-r);
+    color: var(--main-font-color);
+}
+
+.upper-portfolio-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.upper-portfolio-title span {
+    font-family: var(--ff-u);
+    font-size: var(--fs-18);
+    font-weight: var(--fw-r);
+    color: var(--main-content-color);
+    position: relative;
+}
+
+.upper-portfolio-title span::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: -4px;
+    left: 0;
+    background: var(--main-content-color);
+    height: 1px;
+}
+
+
+.gnrtr-plate {
+    display: flex;
+    justify-content: flex-start;
+    height: 640px;
+    position: relative;
+}
+
+.gnrtr-plate::before {
+    position: absolute;
+    content: "";
+    background: url(../assets/images/gnrtr.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 570px;
+    height: 640px;
+    right: 0;
+    top: 0;
+}
+
+.gnrtr-plate .plate-tag {
+    margin: auto 20px 20px auto;
+}
+
+
+.bold-plate {
+    display: flex;
+    justify-content: flex-start;
+    height: 640px;
+    position: relative;
+}
+
+.bold-plate::before {
+    position: absolute;
+    content: "";
+    background: url(../assets/images/bold.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 557px;
+    height: 724px;
+    left: 0;
+    bottom: 0;
+}
+
+.bold-plate .plate-tag {
+    margin: auto 20px 20px auto;
+}
+
+.profi-plate {
+    display: flex;
+    justify-content: flex-start;
+    height: 640px;
+    position: relative;
+}
+
+.profi-plate::before {
+    position: absolute;
+    content: "";
+    background: url(../assets/images/profi.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 517px;
+    height: 640px;
+    right: 0;
+    bottom: 0;
+}
+
+.profi-plate .plate-tag {
+    margin: 20px 0 0 20px;
+}
+
+.benefits-container {
+    display: flex;
+    flex-direction: column;
+    margin-top:366px !important;
+}
+
+.benefits-title {
+    font-family: var(--ff-u);
+    font-size: var(--fs-40);
+    font-weight: var(--fw-r);
+    color: var(--main-font-color);
+    line-height: 120%;
+}
+
+.benefits-title span {
+    color: var(--main-content-color);
 }
