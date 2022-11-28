@@ -5,6 +5,7 @@
 @import "./burger-nav.css";
 @import "./fonts.css";
 @import "./normalize.css";
+@import "./accordion.css";
 
 body.lock {
     overflow: hidden;
@@ -22,6 +23,7 @@ body.lock {
     --fw-r: 300;
     --fw-m: 500;
     --fw-b: 700;
+    --fs-12: 0.75rem;
     --fs-16: 1rem;
     --fs-18: 1.125rem;
     --fs-20: 1.25rem;
