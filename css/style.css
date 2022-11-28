@@ -45,11 +45,10 @@ body.lock {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 0 100px; */
 }
 
 .container {
     margin: 0 auto;
     max-width: 1280px;
-    width: -webkit-fill-available;
+    width: 100%;
 }

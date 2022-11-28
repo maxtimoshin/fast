@@ -81,28 +81,28 @@
 .header-content::before {
     content: "";
     position: absolute;
-    width: 440px;
-    height: 330px;
+    width: 400px;
+    height: 175px;
     background: url(../assets/images/header-ufo.png);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    left: -75px;
-    top: -50px;
+    left:-60px;
+    top:30px;
 }
 
 .header-content::after {
     content: "";
     position: absolute;
     display: block;
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 250px;
     background: url(../assets/images/header-rocket.png);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    bottom: -120px;
-    right: -75px;
+    bottom: -10px;
+    right: -65px;
 }
 
 .header-lines {
