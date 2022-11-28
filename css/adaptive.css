@@ -3,6 +3,22 @@
     padding: 0 100px;
 }
 
+.benefits-grid-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.benefits-grid-mobile {
+    display: none;
+    background: url(../assets/images/benefits-grid-mobile.png);
+    width: 100vw;
+    height: 260px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 40px 0 0 0;
+}
+
 @media (max-width:1100px) {
     .header-nav {
         background: transparent;
@@ -22,17 +38,43 @@
     }
 
     .header-content::before {
-        width:275px;
+        width: 275px;
         height: 120px;
     }
 
     .header-content::after {
-        width:325px;
+        width: 325px;
         height: 195px;
     }
 
     .header-lines h1 {
         font-size: var(--fs-40);
+    }
+
+    .stretched-words {
+        font-size: var(--fs-60);
+    }
+
+    .benefits-grid {
+        display: none;
+    }
+
+    .benefits-grid-mobile {
+        display: block;
+    }
+}
+
+@media (max-width:866px) {
+    .about-block {
+        margin: 0 auto;
+        padding:16px;
+    }
+    .about-title {
+        font-size: var(--fs-48);
+    }
+    .about-description {
+        font-size: var(--fs-16);
+        line-height: 40px;
     }
 }
 
@@ -68,6 +110,13 @@
     .header-lines {
         width: 90%;
     }
+
+    .stretched-words {
+        font-size: var(--fs-32);
+    }
+    .container-wrapper {
+        background-position: 0 50px;
+    }
 }
 
 @media (max-width:425px) {
@@ -76,24 +125,31 @@
     }
 
     .header-content::before {
-        right:-10px;
+        right: -10px;
     }
 
     .header-content::after {
-        left:-10px;
+        left: -10px;
+    }
+
+    .benefits-grid-mobile {
+        height: 200px;
+    }
+    .about-block {
+        margin: 0 16px;
     }
 }
 
 @media (max-width:340px) {
     .header-content::before {
-        width:240px;
+        width: 240px;
         height: 100px;
-        top:0px;
+        top: 0px;
     }
 
     .header-content::after {
-        width:260px;
+        width: 260px;
         height: 120px;
-        bottom:0px;
+        bottom: 0px;
     }
 }
