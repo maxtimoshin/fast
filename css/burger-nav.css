@@ -33,7 +33,7 @@
         position: absolute;
         height: 15%;
         width: 100%;
-        background-color: #fff;
+        background-color: var(--main-font-color);
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s;

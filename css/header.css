@@ -1,6 +1,7 @@
 .header {
     display: flex;
     flex-direction: column;
+    
 }
 
 .header-top-bar {
@@ -74,6 +75,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    border-radius: 16px;
 }
 
 .header-content::before {
@@ -92,6 +94,7 @@
 .header-content::after {
     content: "";
     position: absolute;
+    display: block;
     width: 450px;
     height: 450px;
     background: url(../assets/images/header-rocket.png);
@@ -105,6 +108,7 @@
 .header-lines {
     height: 95%;
     width: 100%;
+    display: block;
     background-image: url(../assets/images/header-lines.png);
     background-position: center;
     background-size: contain;

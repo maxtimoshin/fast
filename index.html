@@ -19,27 +19,51 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="container header-container">
-                <div class="header-top-bar">
-                    <a href="" class="header-logo">FAST.</a>
-                    <nav class="header-nav">
-                        <ul>
-                            <li><a href="">Портфолио</a></li>
-                            <li><a href="">О нас</a></li>
-                            <li><a href="">Контакты</a></li>
-                            <li><a href="">Команда</a></li>
-                            <li><a href="">Процес</a></li>
-                        </ul>
-                        <button class="header-order-btn">
-                            Замовити
-                        </button>
-                    </nav>
-                </div>
-                <div class="header-content">
-                    <div class="header-lines">
-                        <h1>твій майбутній сайт<br> розпочнеться <span>тут</span></h1>
+        <header class="header container header-container">
+            <div class="header-top-bar">
+                <a href="" class="header-logo">FAST.</a>
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="">Портфолио</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Команда</a></li>
+                        <li><a href="">Процес</a></li>
+                    </ul>
+                    <button class="header-order-btn">
+                        Замовити
+                    </button>
+                    <div class="burger-menu">
+                        <div class="menu-icon">
+                            <span></span>
+                        </div>
+                        <nav class="menu-body">
+                            <nav class="menu-list">
+                                <ul>
+                                    <li class="menu-item">
+                                        <a class="about-btn">про нас</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="offices-btn">офіси</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="events-btn">івенти</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="bistro-btn">бістро</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a class="contacts-btn">контакти</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </nav>
                     </div>
+                </nav>
+            </div>
+            <div class="header-content">
+                <div class="header-lines">
+                    <h1>твій майбутній сайт<br> розпочнеться <span>тут</span></h1>
                 </div>
             </div>
         </header>
@@ -245,9 +269,38 @@
                     <div class="result-title">ви кайфуєте<br> від результату</div>
                 </div>
             </div>
+            <div class="container order-container">
+                <div class="order-text">Готовий, унікальний сайт<br><span>за 21 день</span></div>
+                <button class="order-button">Замовити сайт</button>
+            </div>
+            <div class="container prices-container">
+                <p>Знаємо, що у вас в голові<br> залишилось одне питання:</p>
+                <img class="prices1-image" src="./assets/images/price-image1.png" alt="">
+                <img class="prices2-image" src="./assets/images/price-image2.png" alt="">
+            </div>
+            <div class="container form-container">
+                <div class="form-title">Запис на безкоштовну<br>консультацію</div>
+                <form action="">
+                    <input type="text" placeholder="Ім'я" name="name" required>
+                    <input type="text" placeholder="Номер телефону" name="phone" required>
+                    <button type="submit">Залишити заявку</button>
+                </form>
+            </div>
         </main>
-        <footer class="footer">
-            <div class="inner-footer"></div>
+        <footer class="footer container">
+            <div class="upper-footer-block">
+                <div class="telegram">Написати нам:<br>
+                    <span><a href="">Telegam</a></span>
+                </div>
+                <a class="logo">FAST.</a>
+                <div class="contacts">Контакти:<br>
+                    <span><a href="tel:+380674011151">+380 (67) 40 111 51</a></span>    
+                </div>
+            </div>
+            <div class="lower-footer-block">
+                <div class="policy">Політика конфіденційності</div>
+                <div class="rights">© Всі права захищені 2022</div>
+            </div>
         </footer>
     </div>
 

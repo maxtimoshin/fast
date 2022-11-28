@@ -1,5 +1,6 @@
 .main {
     margin: 180px 0 0 0;
+    display: none;
 }
 
 .stretched-words {
@@ -796,4 +797,150 @@
     background: var(--second-content-color);
     border-radius: 6px;
     transform: rotate(-10deg);
+}
+
+
+.order-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 180px !important;
+    margin-bottom: 180px !important;
+    background: var(--second-content-color);
+    border-radius: 16px;
+}
+
+.order-text {
+    font-family: var(--ff-u);
+    font-size: var(--fs-40);
+    font-weight: var(--fw-m);
+    color: var(--main-font-color);
+    line-height: 120%;
+    margin: 50px 0 50px 50px;
+}
+
+.order-text span {
+    font-family: var(--ff-u);
+    font-size: var(--fs-40);
+    font-weight: var(--fw-m);
+    color: var(--main-content-color);
+}
+
+.order-button {
+    font-family: var(--ff-u);
+    font-size: var(--fs-18);
+    font-weight: var(--fw-m);
+    color: var(--second-font-color);
+    padding: 24px 118px;
+    border-radius: 12px;
+    background: var(--main-content-color);
+    border: none;
+    cursor: pointer;
+    margin: 50px 50px 50px 0;
+}
+
+.prices-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 180px !important;
+}
+
+.prices-container p {
+    font-family: var(--ff-u);
+    font-size: var(--fs-18);
+    font-weight: var(--fw-r);
+    opacity: 0.6;
+    line-height: 140%;
+    color: var(--main-font-color);
+}
+
+.prices1-image {
+    max-width: 660px;
+}
+
+.prices2-image {
+    max-width: 263px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background: var(--main-content-color);
+    border-radius: 12px;
+    gap: 40px;
+    margin-bottom: 180px !important;
+}
+
+.form-title {
+    margin: 50px 0 0 50px;
+    font-family: var(--ff-u);
+    font-size: var(--fs-48);
+    font-weight: var(--fw-b);
+    line-height: 110%;
+    color: var(--second-font-color);
+}
+
+.form-container form {
+    margin: 0 50px 100px 50px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-container form input {
+    border: none;
+    border-radius: 12px;
+    background: var(--second-font-color);
+    max-width: 359px;
+    width: 100%;
+    flex: 1;
+    height: 74px;
+    font-family: var(--ff-u);
+    font-size: var(--fs-18);
+    font-weight: var(--fw-m);
+    color: var(--main-font-color);
+    outline: none;
+    padding: 0;
+    padding-left: 30px;
+}
+
+.form-container form input::placeholder {
+    color: var(--main-font-color);
+}
+
+.form-container form button {
+    font-family: var(--ff-u);
+    font-size: var(--fs-18);
+    font-weight: var(--fw-m);
+    color: var(--second-font-color);
+    background: var(--main-font-color);
+    border: none;
+    border-radius: 12px;
+    max-width: 389px;
+    width: 100%;
+    flex: 1;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.form-container form button::after {
+    content: "Натискаючи кнопку «Залишити заявку», ви приймаєте умови політики";
+    position: absolute;
+    bottom: -50px;
+    width: 317px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: var(--ff-u);
+    font-size: var(--fs-13);
+    font-weight: var(--fw-r);
+    color: var(--second-font-color);
+    line-height: 130%;
+    cursor: initial;
 }
