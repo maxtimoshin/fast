@@ -17,6 +17,7 @@
         top: 50px;
         right: 80px;
     }
+
     .menu-icon {
         top: 0;
         z-index: 101;
@@ -26,51 +27,61 @@
         height: 30px;
         cursor: pointer;
     }
+
     .menu-icon span,
     .menu-icon::before,
     .menu-icon::after {
         left: 0;
         position: absolute;
-        height: 15%;
+        height: 3px;
         width: 100%;
+        border-radius: 20px;
         background-color: var(--main-font-color);
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s;
     }
+
     .menu-icon::before,
     .menu-icon::after {
         content: "";
     }
+
     .menu-icon::before {
         top: 0;
     }
+
     .menu-icon::after {
         bottom: 0;
     }
+
     .menu-icon span {
         top: 50%;
         -webkit-transform: scale(1) translate(0px, -50%);
         -ms-transform: scale(1) translate(0px, -50%);
         transform: scale(1) translate(0px, -50%);
     }
+
     .menu-icon.activem span {
         -webkit-transform: scale(0) translate(0px, -50%);
         -ms-transform: scale(0) translate(0px, -50%);
         transform: scale(0) translate(0px, -50%);
     }
+
     .menu-icon.activem::before {
         top: 55%;
         -webkit-transform: rotate(-45deg) translate(0px, -50%);
         -ms-transform: rotate(-45deg) translate(0px, -50%);
         transform: rotate(-45deg) translate(0px, -50%);
     }
+
     .menu-icon.activem::after {
         bottom: 40%;
         -webkit-transform: rotate(45deg) translate(0px, 50%);
         -ms-transform: rotate(45deg) translate(0px, 50%);
         transform: rotate(45deg) translate(0px, 50%);
     }
+
     .menu-body {
         position: fixed;
         top: 0;
@@ -85,12 +96,15 @@
         overflow: auto;
         z-index: 100;
     }
+
     .sub-menu {
         padding: 0;
     }
+
     .menu-body.activem {
         left: 0;
     }
+
     .menu-body::before {
         content: "";
         position: fixed;
@@ -99,6 +113,7 @@
         left: 0;
         z-index: 100;
     }
+
     .menu-list>ul {
         list-style: none;
         /* -webkit-box-align: center;
@@ -115,31 +130,37 @@
         padding-bottom: 50px;
         /* text-align: center; */
         text-align: center;
-        margin-top:50px;
+        margin-top: 50px;
     }
+
     .menu-list>ul>li {
         margin: 0 0 15px 0;
-        
+
     }
+
     .menu-list>ul>li:last-child {
         margin: 0 0 0 0;
     }
+
     .menu-list>ul a {
         font-size: 24px;
         text-decoration: none;
         color: #fff;
         text-transform: uppercase;
     }
+
     .sub-menu {
         display: block;
         position: relative;
         text-align: center;
         left: 0;
     }
+
     .sub-menu>li>a {
         font-size: 14px;
         text-align: center;
     }
+
     .sub-menu>li {
         background-color: transparent;
         text-align: center;

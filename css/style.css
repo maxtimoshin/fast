@@ -40,16 +40,16 @@ body.lock {
 }
 
 .wrapper {
-    width: 100%;
-    margin: 0 auto;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     /* padding: 0 100px; */
 }
 
 .container {
     margin: 0 auto;
     max-width: 1280px;
-    width: 100%;
+    width: -webkit-fill-available;
 }
