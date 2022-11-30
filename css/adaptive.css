@@ -5,6 +5,7 @@
 
 .adaptive-footer-logo {
     display: none;
+    position: absolute;
     width: 100%;
     display: flex;
     align-items: center;
@@ -13,12 +14,11 @@
     font-size: var(--fs-40);
     font-weight: var(--fw-b);
     text-transform: uppercase;
-    margin-top:20px;
+    margin-top: 20px;
     letter-spacing: -0.14em;
 }
 
 .adaptive-footer-logo span {
-    /* display: block; */
     display: none;
     position: relative;
     color: var(--main-content-color);
@@ -65,6 +65,10 @@
     display: none;
 }
 
+.single-photo-area2-mobile {
+    display: none;
+}
+
 .benefits-grid-mobile {
     display: none;
     background: url(../assets/images/benefits-grid-mobile.png);
@@ -74,6 +78,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin: 40px 0 0 0;
+}
+
+.team-s-img {
+    display: none;
 }
 
 @media (max-width:1295px) {
@@ -349,6 +357,8 @@
 }
 
 @media (max-width:767px) {
+
+
     .header-top-bar {
         margin: 40px 0 30px 0;
     }
@@ -476,6 +486,7 @@
         width: calc(100% - 64px) !important;
         padding: 16px 16px 56px 16px;
         gap: 22px;
+        margin-bottom: 80px !important;
     }
 
     .form-container .form-title {
@@ -550,9 +561,12 @@
     .lower-footer-block {
         margin: 20px 16px;
     }
+
     .adaptive-footer-logo {
-        display:flex;
+        display: flex;
+        position: initial;
     }
+
     .adaptive-footer-logo span {
         display: inline-block;
     }
@@ -587,21 +601,50 @@
             "single-photo-area2 single-photo-area2"
     }
 
+    .team-right-grid {
+        grid-template-areas:
+            "single-photo-area3 single-photo-area2"
+            "photo-area3 photo-area4"
+            "photo-area5 photo-area6"
+            "photo-area8 photo-area8";
+    }
+
+    .single-photo-area2-mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    .single-photo-area2-mobile img {
+        display: block;
+    }
+
+    .photo-area7 {
+        display: none;
+    }
+
     .sm-photo img {
         max-width: initial;
     }
 
-    .team-right-grid .sm-photo img {
+    /* .team-right-grid .sm-photo img {
         height: 250px;
-    }
+    } */
 
     .photo-area6 img {
         width: 100px;
         height: 100px !important;
     }
 
-    .l-photo img {
+    /* .l-photo img {
         height: 200px;
+    } */
+
+    .team-s-img {
+        display: block;
+    }
+
+    .team-l-img {
+        display: none;
     }
 }
 
