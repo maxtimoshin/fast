@@ -586,8 +586,9 @@
 
 .sm-photo img {
     max-width: 308px;
-    height: fit-content;
+    height: min-content;
     width: 100%;
+    object-fit: contain;
 }
 
 .l-photo img {
