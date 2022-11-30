@@ -586,7 +586,8 @@
 
 .sm-photo img {
     max-width: 308px;
-    height: min-content;
+    height: auto;
+    background-size: contain;
     width: 100%;
     object-fit: contain;
 }
