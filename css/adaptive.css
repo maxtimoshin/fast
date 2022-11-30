@@ -3,6 +3,55 @@
     padding: 0 100px;
 }
 
+.adaptive-footer-logo {
+    display: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ff-u);
+    font-size: var(--fs-40);
+    font-weight: var(--fw-b);
+    text-transform: uppercase;
+    margin-top:20px;
+    letter-spacing: -0.14em;
+}
+
+.adaptive-footer-logo span {
+    /* display: block; */
+    display: none;
+    position: relative;
+    color: var(--main-content-color);
+}
+
+.adaptive-footer-logo span::before {
+    width: max-content;
+    position: absolute;
+    content: "FAST.";
+    color: var(--main-content-color);
+    font-family: var(--ff-u);
+    /* font-size: var(--fs-100); */
+    font-weight: var(--fw-b);
+    text-transform: uppercase;
+    left: -130%;
+    top: 0;
+    opacity: 0.1;
+}
+
+.adaptive-footer-logo span::after {
+    width: max-content;
+    position: absolute;
+    content: "FAST.";
+    color: var(--main-content-color);
+    font-family: var(--ff-u);
+    /* font-size: var(--fs-100); */
+    font-weight: var(--fw-b);
+    text-transform: uppercase;
+    left: 130%;
+    top: 0;
+    opacity: 0.1;
+}
+
 .benefits-grid-container {
     width: 100%;
     overflow: hidden;
@@ -462,6 +511,50 @@
         font-size: var(--fs-10);
         max-width: 240px;
         bottom: -40px;
+    }
+
+    .telegram {
+        font-size: var(--fs-12);
+    }
+
+    .telegram span {
+        font-size: var(--fs-16);
+    }
+
+    .contacts {
+        font-size: var(--fs-12);
+    }
+
+    .contacts span {
+        font-size: var(--fs-16);
+    }
+
+    .policy,
+    .rights {
+        font-size: var(--fs-10);
+    }
+
+    .footer {
+        height: initial;
+    }
+
+    .upper-footer-block {
+        padding-bottom: 24px;
+        margin: 27px 16px 0;
+    }
+
+    .upper-footer-block .logo {
+        display: none;
+    }
+
+    .lower-footer-block {
+        margin: 20px 16px;
+    }
+    .adaptive-footer-logo {
+        display:flex;
+    }
+    .adaptive-footer-logo span {
+        display: inline-block;
     }
 }
 
