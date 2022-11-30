@@ -136,6 +136,11 @@
     .menu-list>ul>li {
         margin: 0 0 15px 0;
 
+
+    }
+
+    .menu-list>ul>li>a {
+        color: var(--second-content-color);
     }
 
     .menu-list>ul>li:last-child {
