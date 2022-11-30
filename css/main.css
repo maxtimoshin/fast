@@ -193,6 +193,10 @@
     line-height: 50px;
 }
 
+.adaptive-plate-img {
+    display: none;
+}
+
 .portfolio-content {
     margin-left: 214px;
     display: flex;

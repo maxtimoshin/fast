@@ -19,6 +19,13 @@
     margin: 40px 0 0 0;
 }
 
+@media (max-width:1295px) {
+    .portfolio-content {
+        margin: 0;
+        justify-content: center;
+    }
+}
+
 @media (max-width:1100px) {
     .header-nav {
         background: transparent;
@@ -62,16 +69,63 @@
     .benefits-grid-mobile {
         display: block;
     }
+
+    .adaptive-plate-img {
+        display: block;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .portfolio-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0 16px;
+    }
+
+    .container-wrapper {
+        margin: 0 0 220px 0;
+    }
+
+    .portfolio-title {
+        align-self: flex-start;
+    }
+
+    .upper-portfolio-title,
+    .lower-portfolio-title {
+        font-size: var(--fs-48);
+    }
+
+    .upper-portfolio-title span {
+        font-size: var(--fs-18);
+    }
+
+    /* portfolio plates */
+    .gnrtr-plate {
+        width: 100%;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .gnrtr-plate::before {
+        /* max-width: 570px;
+        max-height: 640px;
+        width: 100%;
+        height: 640px; */
+        display: none;
+    }
+
 }
 
 @media (max-width:866px) {
     .about-block {
         margin: 0 auto;
-        padding:16px;
+        padding: 16px;
     }
+
     .about-title {
         font-size: var(--fs-48);
     }
+
     .about-description {
         font-size: var(--fs-16);
         line-height: 40px;
@@ -114,6 +168,7 @@
     .stretched-words {
         font-size: var(--fs-32);
     }
+
     .container-wrapper {
         background-position: 0 50px;
     }
@@ -135,6 +190,7 @@
     .benefits-grid-mobile {
         height: 200px;
     }
+
     .about-block {
         margin: 0 16px;
     }
