@@ -1,6 +1,6 @@
 .main {
     margin: 180px 0 0 0;
-    width:100%;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -517,6 +517,13 @@
 
 .single-photo-area2 {
     grid-area: single-photo-area2;
+    width: 100%;
+    max-width: 520px;
+}
+
+.single-photo-area2 img {
+    width: 100%;
+    max-width: 520px;
 }
 
 .photo-area1 {
@@ -580,12 +587,14 @@
 .sm-photo img {
     max-width: 308px;
     height: fit-content;
+    width: 100%;
 }
 
 .l-photo img {
     max-width: 632px;
     max-height: 287px;
     height: fit-content;
+    width: 100%;
 }
 
 .l-photo,
@@ -863,10 +872,12 @@
 
 .prices1-image {
     max-width: 660px;
+    width: 100%;
 }
 
 .prices2-image {
     max-width: 263px;
+    width: 100%;
 }
 
 .form-container {
