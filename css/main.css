@@ -236,7 +236,7 @@
 }
 
 .mojem-plate {
-    background-image: url(../assets/images/mojem.png);
+    background-image: url(../assets/images/mojem.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -250,7 +250,7 @@
 }
 
 .sens-visual-plate {
-    background-image: url(../assets/images/sens-visual.png);
+    background-image: url(../assets/images/sens-visual.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -279,7 +279,7 @@
 }
 
 .bohlib-plate {
-    background-image: url(../assets/images/bohlib.png);
+    background-image: url(../assets/images/bohlib.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -316,7 +316,7 @@
 .bigmoney-plate::before {
     position: absolute;
     content: "";
-    background: url(../assets/images/bigmoney.png);
+    background: url(../assets/images/bigmoney.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -382,7 +382,7 @@
 .gnrtr-plate::before {
     position: absolute;
     content: "";
-    background: url(../assets/images/gnrtr.png);
+    background: url(../assets/images/gnrtr.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -407,7 +407,7 @@
 .bold-plate::before {
     position: absolute;
     content: "";
-    background: url(../assets/images/bold.png);
+    background: url(../assets/images/bold.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -431,7 +431,7 @@
 .profi-plate::before {
     position: absolute;
     content: "";
-    background: url(../assets/images/profi.png);
+    background: url(../assets/images/profi.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
