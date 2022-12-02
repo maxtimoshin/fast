@@ -2,6 +2,7 @@
 
 const iconMenu = document.querySelector('.menu-icon')
 const menuBody = document.querySelector('.menu-body')
+const headerLogo = document.querySelector('.header-logo')
 
 // Scroll To Buttons
 
@@ -52,6 +53,7 @@ scrollingToBlock(orderBtn, formBlock)
 if (iconMenu) {
     iconMenu.addEventListener('click', (e) => {
         document.body.classList.toggle('lock')
+        headerLogo.classList.toggle('activem')
         iconMenu.classList.toggle('activem')
         menuBody.classList.toggle('activem')
     })

@@ -17,6 +17,7 @@
     letter-spacing: -0.14em;
     font-weight: var(--fw-b);
     color: var(--main-font-color);
+    transition: all 0.3s;
 }
 
 .header-nav {

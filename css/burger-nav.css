@@ -42,6 +42,17 @@
         transition: 0.3s;
     }
 
+    .menu-icon span activem,
+    .menu-icon.activem::before,
+    .menu-icon.activem::after {
+        background-color: var(--main-content-color);
+    }
+
+    .header-logo.activem {
+        color: var(--main-content-color);
+        z-index: 500;
+    }
+
     .menu-icon::before,
     .menu-icon::after {
         content: "";
@@ -85,7 +96,7 @@
     .menu-body {
         position: fixed;
         top: 0;
-        left: -150%;
+        /* left: -150%; */
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.9);
@@ -95,6 +106,12 @@
         transition: left 0.4s ease-in;
         overflow: auto;
         z-index: 100;
+        opacity: 0;
+        left: 0;
+        visibility: hidden;
+        transform: translateY(20px);
+        transition: all 0.3s;
+
     }
 
     .sub-menu {
@@ -102,7 +119,11 @@
     }
 
     .menu-body.activem {
+        /* left: 0; */
         left: 0;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
     }
 
     .menu-body::before {
@@ -114,11 +135,27 @@
         z-index: 100;
     }
 
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+    }
+
+    .menu-list>button {
+        display: block;
+        margin-left: 16px;
+    }
+
+    .menu-list>span>a {
+        color: #fff;
+        font-family: var(--ff-t);
+        font-size: var(--fs-24);
+        font-weight: var(--fw-r);
+        margin:0 0 0 16px;
+    }
+
     .menu-list>ul {
         list-style: none;
-        /* -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; */
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -126,11 +163,10 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        padding-top: 100px;
-        padding-bottom: 50px;
-        /* text-align: center; */
-        text-align: center;
         margin-top: 50px;
+        align-items: flex-start;
+        padding: 100px 0 0 16px;
+
     }
 
     .menu-list>ul>li {
@@ -141,7 +177,11 @@
 
     .menu-list>ul>li>a {
         color: var(--second-content-color);
+        font-size: var(--fs-18);
+        position: relative;
     }
+
+
 
     .menu-list>ul>li:last-child {
         margin: 0 0 0 0;

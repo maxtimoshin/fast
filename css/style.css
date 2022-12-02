@@ -7,9 +7,6 @@
 @import "./normalize.css";
 @import "./accordion.css";
 
-body.lock {
-    overflow: hidden;
-}
 
 :root {
     --main-bg-color: #FFFFFF;

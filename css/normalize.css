@@ -102,7 +102,7 @@ video {
 html {
     font-size: 1rem;
     font-family: "eUkraine", sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 article,
@@ -122,8 +122,13 @@ section {
 body {
     line-height: 1;
     background: var(--main-bg-color);
-    
+    overflow-x: hidden;
 }
+
+body.lock {
+    overflow: hidden;
+}
+
 
 a {
     color: #000;
