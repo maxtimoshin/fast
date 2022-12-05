@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="./css/style.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <meta name="description" content="Fast - website agency" />
 
     <link type="image/x-icon" rel="shortcut icon" href="./assets/images/favicons/32x32.ico">
@@ -15,6 +17,8 @@
     <link type="image/png" sizes="32x32" rel="icon" href="./assets/images/favicons/32x32.png">
     <link type="image/png" sizes="96x96" rel="icon" href="./assets/images/favicons/96x96.png">
     <link type="image/png" sizes="120x120" rel="icon" href="./assets/images/favicons/120x120.png">
+
+
 
     <title>FAST.</title>
 </head>
@@ -59,8 +63,13 @@
                     </nav>
                 </div>
                 <div class="header-content">
-                    <div class="header-lines">
-                        <h1>твій майбутній сайт<br> розпочнеться <span>тут</span></h1>
+                    <div class="header-ufo" data-aos="fade-down-right" data-aos-offset="200" data-aos-delay="50"
+                        data-aos-duration="1000"></div>
+                    <div class="header-rocket" data-aos="fade-up-left" data-aos-offset="200" data-aos-delay="50"
+                        data-aos-duration="1000"></div>
+                    <div class="header-lines" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
+                        <h1 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">твій майбутній сайт<br>
+                            розпочнеться <span>тут</span></h1>
                     </div>
                 </div>
             </header>
@@ -83,10 +92,10 @@
             <div class="container-wrapper">
                 <div class="container about-container">
                     <div class="about-block">
-                        <div class="about-title">то цей<br> сайт<br>
+                        <div class="about-title" data-aos="fade-down">то цей<br> сайт<br>
                             буде</div>
                         <div class="dividing-line"></div>
-                        <div class="about-description">зроблений якісно і структурно
+                        <div class="about-description" data-aos="fade-down">зроблений якісно і структурно
                             підключений до систем аналітики
                             відповідає маркетинговим цілям
                             продає ваші послуги та продукти</div>
@@ -355,8 +364,15 @@
         </footer>
     </div>
 
+
+
+
     <script src="./js/main.js"></script>
     <script src="./js/accordion.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

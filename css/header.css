@@ -4,8 +4,8 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 
 }
 
@@ -14,11 +14,11 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 40px 0 15px 0;
 }
 
@@ -33,13 +33,17 @@
     transition: all 0.3s;
 }
 
+.header-logo:hover {
+    color: var(--main-content-color);
+}
+
 .header-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 8px 8px 8px 24px;
     height: 50px;
     gap: 40px;
@@ -53,8 +57,8 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 40px;
 }
 
@@ -63,8 +67,11 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
 .header-nav ul li a {
@@ -72,6 +79,12 @@
     font-size: var(--fs-16);
     font-weight: var(--fw-m);
     color: var(--main-font-color);
+    transition: all 0.3s;
+
+}
+
+.header-nav ul li:hover a {
+    color: var(--main-content-color);
 }
 
 .header-order-btn {
@@ -79,11 +92,11 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 200px;
     height: 50px;
     background: var(--main-content-color);
@@ -94,6 +107,13 @@
     font-weight: var(--fw-m);
     border: none;
     cursor: pointer;
+    border: 1px solid var(--main-content-color);
+    transition: all 0.3s;
+}
+
+.header-order-btn:hover {
+    background: transparent;
+    color: var(--main-content-color);
 }
 
 .header-content {
@@ -107,16 +127,16 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     position: relative;
     border-radius: 16px;
 }
 
-.header-content::before {
+/* .header-content::before {
     content: "";
     position: absolute;
     width: 400px;
@@ -141,7 +161,34 @@
     background-repeat: no-repeat;
     bottom: -10px;
     right: -65px;
+} */
+
+.header-ufo {
+    position: absolute;
+    width: 400px;
+    height: 175px;
+    background: url(../assets/images/header-ufo.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -60px;
+    top: 30px;
 }
+
+.header-rocket {
+    position: absolute;
+    display: block;
+    width: 400px;
+    height: 250px;
+    background: url(../assets/images/header-rocket.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: -10px;
+    right: -65px;
+}
+
+
 
 .header-lines {
     height: 95%;
@@ -155,11 +202,11 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .header-lines h1 {
