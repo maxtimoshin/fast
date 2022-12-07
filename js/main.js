@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.loader').style.display = "none"
+})
+
 // Form controls
 
 const formBtn = document.querySelector('.form-submit-button')
@@ -110,3 +114,4 @@ formBtn.addEventListener('click', (e) => {
         useAlerts(false, true)
     }
 })
+
