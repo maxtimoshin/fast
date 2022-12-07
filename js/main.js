@@ -1,6 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.loader').style.display = "none"
-})
+// window.addEventListener('load', () => {
+//     document.querySelector('.loader').style.display = "none"
+//     console.log('dom loaded')
+// })
 
 // Form controls
 
