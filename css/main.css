@@ -1116,6 +1116,32 @@
     margin-bottom: 180px !important;
 }
 
+.require-fields-alert {
+    display: none;
+    font-size: var(--fs-16);
+    font-weight: var(--fw-n);
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 10px 20px;
+    background: rgb(50, 48, 54, 0.8);
+    width: fit-content;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.success-form-alert {
+    display: none;
+    font-size: var(--fs-16);
+    font-weight: var(--fw-n);
+    color: rgb(34, 211, 18);
+    text-align: center;
+    padding: 10px 20px;
+    background: rgb(50, 48, 54, 0.8);
+    width: fit-content;
+    border-radius: 10px;
+    align-self: center;
+}
+
 .form-title {
     margin: 50px 0 0 50px;
     font-family: var(--ff-u);

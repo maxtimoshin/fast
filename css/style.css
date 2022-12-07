@@ -23,6 +23,7 @@
     --fs-10: 0.625rem;
     --fs-12: 0.75rem;
     --fs-13: 0.813rem;
+    --fs-14: 0.875rem;
     --fs-16: 1rem;
     --fs-18: 1.125rem;
     --fs-20: 1.25rem;
@@ -46,18 +47,30 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .container {
     margin: 0 auto;
     max-width: 1280px;
     width: 100%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }

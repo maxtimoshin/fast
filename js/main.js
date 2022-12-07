@@ -1,3 +1,11 @@
+// Form controls
+
+const formBtn = document.querySelector('.form-submit-button')
+const nameInput = document.querySelector('.form-name-input')
+const phoneInput = document.querySelector('.form-phone-input')
+const formRejectAlert = document.querySelectorAll('.require-fields-alert')
+const formSuccessAlert = document.querySelectorAll('.success-form-alert')
+
 // Burger Items
 
 const iconMenu = document.querySelector('.menu-icon')
@@ -58,3 +66,47 @@ if (iconMenu) {
         menuBody.classList.toggle('activem')
     })
 }
+
+// Form Handler 
+
+const useAlerts = (confirmAlertStatus, rejectAlertStatus) => {
+    formRejectAlert.forEach(e => {
+        rejectAlertStatus ? e.style.display = "block" : e.style.display = "none"
+    })
+    formSuccessAlert.forEach(e => {
+        confirmAlertStatus ? e.style.display = "block" : e.style.display = "none"
+    })
+}
+
+let tg = {
+    token: "5919867606:AAGF_0jom-_PXqQZITrhK_45DbeEwSxrkzs", // Your bot's token that got from @BotFather
+    // chat_id: "1234567890" // The user's(that you want to send a message) telegram chat id
+}
+
+const userIds = ["261206896"]
+
+
+function sendMessage(text, userId) {
+    const url = `https://api.telegram.org/bot${tg.token}/sendMessage?chat_id=${userId}&text=${text}`; // The url to request
+    const xht = new XMLHttpRequest();
+    xht.open("GET", url);
+    xht.send();
+}
+
+formBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    if (nameInput.value && phoneInput.value) {
+        // fbq('track', 'Lead');
+        // gtag('event', 'submit', { "event_category": 'form', "event_label": optionInput.value });
+        for (singleUserId of userIds) {
+            sendMessage(`
+        Name : ${nameInput.value}
+        Phone : ${phoneInput.value}`, singleUserId)
+        }
+        nameInput.value = ""
+        phoneInput.value = ""
+        useAlerts(true, false)
+    } else {
+        useAlerts(false, true)
+    }
+})
